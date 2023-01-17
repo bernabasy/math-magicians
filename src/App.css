@@ -1,0 +1,73 @@
+:root {
+  --grey: #e4e6eb;
+  --lightgrey: #b0b3b8;
+  --orange: #fc9d44;
+  --dark-orange: #8d4004;
+  --light-orange: #ffd580;
+  --darkgrey: #5a5a5a;
+}
+
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--grey);
+}
+
+.calculeter-wrap {
+  display: grid;
+  justify-content: center;
+  margin: 10%;
+  grid-template-columns: repeat(4, 15rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+}
+
+.calculeter-wrap > button {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.spann-two {
+  grid-column: span 2;
+  background-color: var(--lightgrey);
+  border-color: var(--grey);
+}
+
+.number {
+  background-color: var(--lightgrey);
+  border-color: var(--grey);
+}
+
+.output {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--darkgrey);
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 2vw;
+}
+
+.operators {
+  background-color: var(--orange);
+  border-color: var(--lightgrey);
+}
+
+@media screen and (max-width: 767px) {
+  .calculeter-wrap {
+    display: grid;
+    justify-content: center;
+    margin: 10%;
+    grid-template-columns: repeat(4, 30%);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+  }
+
+  .output {
+    padding: 10vw;
+  }
+}
