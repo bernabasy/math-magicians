@@ -48,6 +48,7 @@ body {
   display: flex;
   justify-content: flex-end;
   background-color: var(--darkgrey);
+  color: var(--grey);
   cursor: pointer;
   font-size: 2rem;
   padding: 2vw;
