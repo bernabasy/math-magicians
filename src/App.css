@@ -1,0 +1,135 @@
+:root {
+  --grey: #e4e6eb;
+  --lightgrey: #b0b3b8;
+  --orange: #fc9d44;
+  --dark-orange: #8d4004;
+  --light-orange: #ffd580;
+  --darkgrey: #5a5a5a;
+}
+
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style: none;
+  font-size: larger;
+}
+
+.title {
+  margin: 30px;
+}
+
+.quotes {
+  text-align: center;
+  margin: 18%;
+  font-size: 28px;
+}
+
+.homeBody {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: larger;
+  line-height: 2;
+}
+
+body {
+  background-color: var(--grey);
+}
+
+.calculeter-wrap {
+  display: grid;
+  justify-content: center;
+  margin-left: 5%;
+  margin-top: 20px;
+  grid-template-columns: repeat(4, 12rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 5rem);
+}
+
+.calculeter-wrap > button {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.calculater {
+  display: flex;
+  flex-direction: row;
+}
+
+.calcTitle {
+  padding: 30px;
+}
+
+.spann-two {
+  grid-column: span 2;
+  background-color: var(--lightgrey);
+  border-color: var(--grey);
+}
+
+.number {
+  background-color: var(--lightgrey);
+  border-color: var(--grey);
+}
+
+.output {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--darkgrey);
+  color: var(--grey);
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 2vw;
+}
+
+.operators {
+  background-color: var(--orange);
+  border-color: var(--lightgrey);
+}
+
+@media screen and (max-width: 767px) {
+  .calculeter-wrap {
+    display: grid;
+    justify-content: center;
+    margin: 10px 50px 20px;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 4rem);
+  }
+
+  .output {
+    padding: 10vw;
+  }
+
+  .calculater {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .calcTitle {
+    padding: 5px;
+    padding-left: 30px;
+  }
+
+  .homeBody {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: small;
+    line-height: 2;
+  }
+}
