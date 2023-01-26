@@ -104,7 +104,7 @@ Clone this repository to your desired folder:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👤**Authors** <a name="authors"></a>
-<h4>Kashif Saleem</h4>
+<h4>bernabas yosef</h4>
 
 - GitHub: [@githubhandle](https://github.com/bernabasy)
 - Twitter: [@twitterhandle](https://twitter.com/@bernabasjosef)
